@@ -1,0 +1,211 @@
+#amazon{
+width: 10%
+}
+
+#text {
+    width: 300px;
+    margin-left: 4%;
+}
+.line {
+    width: 1px;
+    height: 25px;
+    background-color: black;
+}
+
+#morroco {
+ width: 40px;
+ height: 40px;
+ margin-top: 2px;
+}
+
+#shoppingcart {
+    width: 30px;
+    height: 30px;
+    margin-right: -10px;
+    margin-top: 4px;
+}
+.bismiLah2{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between ;
+}
+.bismiLah{
+    display: flex;
+    margin-left : 15px;
+}
+hr{
+    margin-top: 20px;
+}
+.table{
+    margin-top: 12px;
+}
+.table td {
+    display: flex;
+    border: solid;
+    width: 300px;
+    height: 40px;
+    align-items: center;
+    
+}
+.table td span {
+    padding-left: 25px;
+}
+.table td img {
+    margin-top: -4px ;
+    margin-left: 10px;
+}
+.tableProduit{
+    display: flex;
+}
+.cproduit img {
+    width: 1022px;
+    height: 530px;
+    margin-left: 100px ;
+    margin-top: 15px;
+}
+.cellipse #ellipse{
+    width: 20px;
+    height: 20px;
+}
+.produitEllipse .cellipse{
+    margin-left: 500px;
+    display: flex;
+    justify-content:space-between;
+    width: 300px;
+
+}
+
+body .article1 .vide {
+    background: rgb(210, 210, 210);
+    width: 400px;
+    height: 425px;
+
+}
+
+.article1 .evaluation .star {
+    background: orange;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+}
+.article1 .evaluation .star span {
+    font-size: 20px;
+}
+.article1 .evaluation .ligne2{
+    width: 1px;
+    height: 25px;
+    background-color: black;
+    border: solid;
+    border-width: 1px;
+}
+.article1 .evaluation .mall {
+    background: orange;
+    width: 35px;
+    border-radius: 30px ;
+    display: flex;
+    justify-content: center;
+    height: 25px;
+}
+.article1 .evaluation .mall img {
+    width: 25px;
+    height: 25px;
+    display: flex;
+}
+
+.article1 .evaluation .starflex {
+    display: flex;
+    justify-content: space-between;
+    width: 180px ;
+    align-items: center;
+}
+.article1 .evaluation{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.pc-underpc .underpc{
+    background: rgb(223, 223, 223);
+    width: 406px;
+}
+
+ .article1 .section1{
+    display: flex;
+    width: 125% ;
+    justify-content: space-between;
+}
+
+/* ---------------------------------------------------------- */
+
+body .article2 .vide {
+    background: rgb(210, 210, 210);
+    width: 400px;
+    height: 425px;
+
+}
+
+.article2 .evaluation .star {
+    background: orange;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+}
+.article2 .evaluation .star span {
+    font-size: 20px;
+}
+.article2 .evaluation .ligne2{
+    width: 1px;
+    height: 25px;
+    background-color: black;
+    border: solid;
+    border-width: 1px;
+}
+.article2 .evaluation .mall {
+    background: orange;
+    width: 35px;
+    border-radius: 30px ;
+    display: flex;
+    justify-content: center;
+    height: 25px;
+}
+.article2 .evaluation .mall img {
+    width: 25px;
+    height: 25px;
+    display: flex;
+}
+
+.article2 .evaluation .starflex {
+    display: flex;
+    justify-content: space-between;
+    width: 180px ;
+    align-items: center;
+}
+.article2 .evaluation{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.pc-underpc .underpc{
+    background: rgb(223, 223, 223);
+    width: 406px;
+}
+
+ .article2 .section1{
+    display: grid ;
+    width: 1650px;
+    height: 890px;
+    grid-template-columns: repeat(4,auto);
+    justify-content: space-between;
+    align-content: space-between;
+}
+
