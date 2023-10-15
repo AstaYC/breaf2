@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+}
+/* ----- nav bar ------ */
+
+#amazon{
+    width: 10%
+}
+
+#text {
+    width: 300px;
+    margin-left: 4%;
+}
+.line {
+    width: 1px;
+    height: 25px;
+    background-color: black;
+}
+
+#morroco {
+   width: 40px;
+   height: 40px;
+   margin-top: 2px;
+}
+
+#shoppingcart {
+    width: 30px;
+    height: 30px;
+    margin-right: -10px;
+    margin-top: 4px;
+}
+.bismiLah2{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between ;
+}
+.bismiLah{
+    display: flex;
+    margin-left : 15px;
+}
+hr{
+    margin-top: 20px;
+}
+
+/* ------ header ------- */
+
+header {
+    width: 65%;
+}
+
+header .select-all{
+    margin-top: 12Px;
+    border-bottom: 0.5px solid;
+    width: 100%;
+    padding-bottom: 6px;
+}
+header .select-all ul{
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+header .select-all ul #check{
+    margin-top: 1px;
+}
+
+header .prodact .vide {
+    width: 110px;
+    height: 95px;
+    background: rgb(225, 225, 225);
+}
+
+header .prodact .select {
+    width: 100px;
+    text-align: center;
+    border-radius: 10Px;
+    background: rgb(246, 239, 239);
+}
+
+header .prodact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 12px;
+    margin-top: 20px;
+}
+ 
+/* icon */
+
+header .icon .heart-trash img {
+    width: 15px;
+}
+header .icon .heart-trash {
+    display: flex;
+    gap: 30px;
+}
+
+header .icon .nombrePiece img{
+    width: 17px;
+    height: 17px;
+}
+
+header .icon .nombrePiece {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px ;
+}
+
+header .prodact-icon{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+/* ----- Main ------*/
+main{
+    width: 35%;
+    padding: 12px;
+    margin-top: 36px ;
+    border: 0.5px solid;
+    margin-right: 10px;
+}
+
+main .chi-haja {
+    margin-top: 12px;
+}
+
+main .total{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+main .jareb {
+    width: 100%;
+    height: 35px;
+    background: rgb(26, 230, 26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+main .payment {
+    margin-top: 12px;
+}
+
+/* -- flex heeader main */
+
+.header-main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* footer */
+
+footer .about li {
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer .about a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+footer .about{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 41%;
+}
+footer #copy {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50%;
+    color: rgb(99, 99, 144);
+}
+footer{
+    height: 100px;
+    background-color: rgb(0, 0, 62);
+    padding-top: 30px;
+    width: 100%;
+    margin-top: 165px;
+}

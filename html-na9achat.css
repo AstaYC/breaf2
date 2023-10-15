@@ -5,6 +5,7 @@ width: 10%
 #text {
     width: 300px;
     margin-left: 4%;
+    height: 35px;
 }
 .line {
     width: 1px;
@@ -142,6 +143,8 @@ body .article1 .vide {
     justify-content: space-between;
 }
 
+ 
+
 /* ---------------------------------------------------------- */
 
 body .article2 .vide {
@@ -209,3 +212,41 @@ body .article2 .vide {
     align-content: space-between;
 }
 
+.c2ellipse {
+   margin-left: 45%;
+    width: 240px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------------------------------------------ */
+
+
+footer .about li {
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer .about a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+footer .about{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 41%;
+}
+footer #copy {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50%;
+    color: rgb(99, 99, 144);
+}
+footer{
+    height: 100px;
+    background-color: rgb(0, 0, 62);
+    padding-top: 10px;
+    width: 100%;
+}
