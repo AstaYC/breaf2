@@ -1,10 +1,10 @@
 * {
-    margin: 0;
+    margin: 1px;
 }
 
 /* ------------- nav bar --------------- */
     #amazon{
-        width: 10%
+        width: 12%
     }
     
     #text {
@@ -498,7 +498,7 @@ main .section3 .vide {
 }
 
 .pc-underpc .underpc{
-    background: rgb(223, 223, 223);
+    background: rgb(243, 242, 242);
     width: 406px;
 }
 
@@ -533,7 +533,7 @@ main .section3 {
         margin-left :60px ;
         margin-bottom: 40px ;
         margin-top: 20px;
-
+        overflow-x: scroll;
 }
 
 /* footer */

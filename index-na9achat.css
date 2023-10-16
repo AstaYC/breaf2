@@ -1,11 +1,11 @@
 #amazon{
-width: 10%
+width: 12%;
 }
 
 #text {
     width: 300px;
     margin-left: 4%;
-    height: 35px;
+    height: 40px;
 }
 .line {
     width: 1px;
@@ -43,11 +43,11 @@ hr{
     margin-top: 20px;
 }
 .table{
-    margin-top: 12px;
+    margin-top: 30px;
 }
 .table td {
     display: flex;
-    border: solid;
+    border: 0.5px solid;
     width: 300px;
     height: 40px;
     align-items: center;
@@ -84,7 +84,7 @@ hr{
 body .article1 .vide {
     background: rgb(210, 210, 210);
     width: 400px;
-    height: 425px;
+    height: 410px;
 
 }
 
@@ -139,10 +139,14 @@ body .article1 .vide {
 
  .article1 .section1{
     display: flex;
-    width: 125% ;
+    width: 1700px ;
     justify-content: space-between;
 }
 
+.article1 {
+    overflow-x: scroll;
+    white-space: nowrap;
+}
  
 
 /* ---------------------------------------------------------- */
@@ -199,7 +203,7 @@ body .article2 .vide {
 }
 
 .pc-underpc .underpc{
-    background: rgb(223, 223, 223);
+    background: rgb(239, 237, 237);
     width: 406px;
 }
 
@@ -210,6 +214,11 @@ body .article2 .vide {
     grid-template-columns: repeat(4,auto);
     justify-content: space-between;
     align-content: space-between;
+}
+
+.article2 {
+    overflow-x: scroll;
+    white-space: nowrap;
 }
 
 .c2ellipse {
