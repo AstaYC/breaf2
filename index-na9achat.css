@@ -36,46 +36,6 @@ nav {
     justify-content: space-between ;
 }
 
-@media (max-width: 500px) {
-    nav{
-        width: 90%;
-    }
-    #text{
-        width: 150px;
-    }
-    .bismiLah2{
-        width: 200px;
-        gap: 11px;
-        margin-left: 30px;
-    }
-    #amazon{
-        width: 37px;
-        margin-right: 6px;
-    }
-    .tableProduit{
-        flex-direction: column;
-        align-items: center;
-    }
-    .produitEllipse .cproduit img {
-        width:400px;
-        height: auto;
-        margin-right: 100px;
-    }
-    .produitEllipse .cellipse{
-        margin-right: 490px;
-    }
-    
-    .produitEllipse {
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-    }
-    
-    footer ul {
-        border: solid;
-    }
-
-} 
 
 .bismiLah{
     display: flex;
@@ -301,3 +261,44 @@ footer{
     padding-top: 10px;
     width: 100%;
 }
+
+@media (max-width: 500px) {
+    nav{
+        width: 90%;
+    }
+    #text{
+        width: 150px;
+    }
+    .bismiLah2{
+        width: 200px;
+        gap: 11px;
+        margin-left: 30px;
+    }
+    #amazon{
+        width: 37px;
+        margin-right: 6px;
+    }
+    .tableProduit{
+        flex-direction: column;
+        align-items: center;
+    }
+    .produitEllipse .cproduit img {
+        width:400px;
+        height: auto;
+        margin-right: 100px;
+    }
+    .produitEllipse .cellipse{
+        margin-right: 490px;
+    }
+    
+    .produitEllipse {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    
+    footer ul {
+        border: solid;
+    }
+
+} 
