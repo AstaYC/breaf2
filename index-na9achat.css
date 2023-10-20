@@ -297,8 +297,49 @@ footer{
         align-items: center;
     }
     
-    footer ul {
-        border: solid;
+    footer .about {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin-left: -0px;
     }
-
+    footer #copy {
+        text-align: center;
+        margin-left: 100px;
+    }
 } 
+
+   @media (max-width : 770px){
+    .tableProduit{
+        flex-direction: column;
+        align-items: center;
+    }
+    .produitEllipse .cproduit img {
+        width:600px;
+        height: auto;
+        margin-right: 100px;
+    }
+    .cellipse{
+        margin-left: 250px !important ;
+    }
+    .c2ellipse{
+        width: 100%;
+        gap: 12px;
+        margin-left: 0px;
+        justify-content: center;
+        gap: 30Px;
+    }
+        
+    }
+    footer .about {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin-left: -0px;
+    }
+    footer #copy {
+        text-align: center;
+        margin-left: 100px;
+   }

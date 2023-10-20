@@ -210,7 +210,32 @@ footer{
     width: 100%;
 
 }
-  
+   
+
+     @media (max-width : 500px){
+        .section1{
+            margin-left: -0px !important;
+        }
+     }
+    
+
+    @media  (max-width: 500px) {
+        
+        footer .about {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            margin-left: -0px;
+        }
+        footer #copy {
+            text-align: center;
+            margin-left: 100px;
+        }
+
+    }
+
+
     @media (max-width: 500px) {
         nav{
             width: 90%;
@@ -220,7 +245,7 @@ footer{
         }
         .bismiLah2{
             width: 200px;
-            gap: 11px;
+            gap: 13px;
             margin-left: 30px;
         }
         #amazon{
@@ -276,23 +301,45 @@ footer{
         main {
            flex-direction: column;
            margin-top: -35px;
+           gap: 20px;
         }
 
         .article1 {
-           padding-top:Px;
+           padding-top:12Px;
+           display: flex;
+           flex-direction: column;
+           gap: 3Px;
         }
         
         .article1 ul{
            font-size: 12px;
            display: flex;
+           gap: 15px;
+        }
+        
+
+        .article1 ul li , .article1 ul li pre  {
+            margin-bottom:-40px;
+            font-size: 10px !important;
         }
 
-        .article1 ul li {
-            margin-bottom:-40px;
+        .article1 ul li input {
+            width: 15px;
         }
+
+        .article1 .price input {
+            width: 90px;
+            height: 3px;
+        }
+        
+        .article1 .price pre{
+             margin-top: 17Px ;
+        }
+
         .article2 {
             margin-top: 18px;
         }
     }
 
+ 
        

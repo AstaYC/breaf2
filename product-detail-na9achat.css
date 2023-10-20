@@ -47,6 +47,23 @@
         margin-top: 20px;
     }
     
+    @media (max-width : 500Px) {
+        nav{
+            width: 90%;
+        }
+        #text{
+            width: 150px;
+        }
+        .bismiLah2{
+            width: 200px;
+            gap: 13px;
+            margin-left: 30px;
+        }
+        #amazon{
+            width: 37px;
+            margin-right: 6px;
+        }
+    }
 /* -----------------header----------------------- */
 
     header .section1 .lbissa img {
@@ -68,8 +85,12 @@
     header .section1 {
         width: 30%;
     }
-                    
-/*  */
+                 
+    
+    @media (max-width : 500Px) {
+        
+    }
+    /*  */
     
     header .section2 {
         width: 30%;
@@ -161,9 +182,6 @@
     }
     
     /* -- */
-    
-    header .section3{
-    }
    
     header .section3 .shipto .morroco{
         display: flex;
@@ -211,12 +229,36 @@
         background: rgb(245, 243, 243);
         border: 1px solid;
     }
+    
     header{
         display: flex;
         justify-content: space-between;
         
     }
-    
+    @media (max-width : 500px) {
+        header {
+            flex-direction: column;
+        }
+        header .section1 , header .section2 , header .section3 {
+            width: 95%;
+        }
+        header .section1 .produit {
+            margin-left: 20px;
+        }
+        
+        header .section2{
+            align-items: center;
+        }
+
+        header .section2 p {
+              text-align: center;
+        }
+        header .section2 .color {
+             padding-left: 320px ;
+             width: 400px;
+        }
+    }
+
     /* ------- Main------ */
     /* section 1 */
     main {
@@ -234,7 +276,20 @@
         display: flex;
         padding-top: 12px;
     }
-
+    
+    @media (max-width : 500px) {
+        main .section1 .disc-text2-image{
+             flex-direction: column;
+             gap: 12px;
+        }
+        main .section1 .disc-text2-image .image img {
+            width: 250px;
+        }
+        main .section1 .disc-text2-image .image{
+            display: flex;
+            justify-content: center;
+        }
+    }
     /* section 2 */
     
     main .section2 .review {
@@ -444,6 +499,36 @@ main .section2 {
     justify-content: space-between;
 }
 
+@media (max-width : 500px) {
+    main .section2 {
+        flex-direction: column;
+        gap : 40px;
+    }
+    main .section2 .review h2 {
+        text-align: center;
+    }
+    main .section2 .lorem {
+        width: 120%;
+    }
+
+    main .section2 .charit1 div , .charit2 div , .charit3 div , .charit4 div , .charit5 div {
+        left: 83Px;
+    }
+    main .section2 .charit2 div{
+        left: 83px;
+    }
+    main .section2 .charit3 div{
+        left: 83px;
+    } 
+    main .section2 .charit4 div{
+        left: 83px;
+    }
+    main .section2 .charit5 div{
+        left: 83px;
+    }
+}
+
+
 /* __ ba9i lkher */
 
 main .section3 .vide {
@@ -535,6 +620,11 @@ main .section3 {
         margin-top: 20px;
         overflow-x: scroll;
 }
+ @media (max-width:500Px){
+    main .section3{
+        margin-left: 0px;
+    }
+ }
 
 /* footer */
 
@@ -566,4 +656,24 @@ footer{
     padding-top: 30px;
     width: 100%;
 }
-  
+  @media (max-width :500px){
+    footer .about {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin-left: -0px;
+    }
+    footer #copy {
+        text-align: center;
+        margin-left: 100px;
+    }
+     
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
