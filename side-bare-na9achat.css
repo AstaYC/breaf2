@@ -58,3 +58,17 @@ header .prodact-icon{
     width: 30%;
     justify-content: space-between;
 }
+body , html{
+   height: 90%;
+}
+header {
+    width: 28% ;
+    height: 100% ;
+    border: solid;
+    background-color: rgb(255, 255, 237)
+}
+header .total , hr{
+    padding-top: 12Px;
+    display: flex;
+    justify-content: space-between;
+}
