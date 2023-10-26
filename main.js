@@ -1,5 +1,5 @@
 let carts = document.querySelectorAll('.mall');
-var total = document.querySelector('.total span');
+let total = document.querySelector('.total span');
 
 let products = [
 
@@ -73,7 +73,6 @@ function totalCost ( product ) {
     else {
         localStorage.setItem("totalCost", product.price);
     }
-    total.textContent = cartCost ;
 }
 
 
@@ -85,28 +84,46 @@ for (let i = 0 ; i < carts.length ; i++){
 
 }
 
-// function antiRefresh () {
-//     let storageCard = localStorage.getItem('cartNumbers') ; 
-//     if (storageCard){
-//         document.querySelector('.bismiLah2 #number').textContent = storageCard ;
-//     }
-// }
+function antiRefresh () {
+    let storageCard = localStorage.getItem('cartNumbers') ; 
+    if (storageCard){
+         document.querySelector('.bismiLah2 #number').textContent = storageCard ;
+     }
+ }
 
-// antiRefresh();
+antiRefresh();
 
 // ----- side bare --------- //
 
 let plus = document.querySelectorAll('.nombrePiece .plus');
 let spanPlus = document.querySelectorAll('.nombrePiece h3')
 function add (spanPlus) {
-    spanPlus = parseInt(spanPlus) ;
-    spanPlus ++ ;
+    console.log(spanPlus);
+    let quantity = parseInt(spanPlus.innerHTML) ;
+    quantity++ ;
+    spanPlus.innerHTML = quantity ;
     console.log('mouse clicked in plus');
 }
 
 
 for (let i = 0 ; i < plus.length ; i++){
     plus[i].addEventListener('click' , () => {
-     add(spanPlus[i]);
+       add(spanPlus[i]);
+    })
+}
+
+let minus = document.querySelectorAll('.nombrePiece .minus');
+let spanMinus = document.querySelectorAll('.nombrePiece h3')
+function supp (spanMinus) {
+    console.log(spanMinus);
+    let quantity = parseInt(spanMinus.innerHTML) ;
+    quantity-- ;
+    spanMinus.innerHTML = quantity ;
+    console.log('mouse clicked in minus');
+}
+
+for (let i = 0 ; i < minus.length ; i++){
+    minus[i].addEventListener('click' , () => {
+        supp(spanMinus[i]);
     })
 }
