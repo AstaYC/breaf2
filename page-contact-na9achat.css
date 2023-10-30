@@ -1,0 +1,336 @@
+html , body {
+    height: 100%;
+    width: 100%;
+}
+.flex-page {
+    width: 100%;
+}
+
+#amazon{
+    width: 12%
+    }
+    
+    #text {
+        width: 350px;
+        margin-left: 4%;
+        height: 40px;
+    }
+    .line {
+        width: 1px;
+        height: 25px;
+        background-color: black;
+    }
+    
+    #morroco {
+     width: 40px;
+     height: 40px;
+     margin-top: 2px;
+    }
+    
+    #shoppingcart {
+        width: 30px;
+        height: 30px;
+        margin-right: -10px;
+        margin-top: 4px;
+    }
+    .bismiLah2{
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between ;
+        width: 100%;
+    }
+    .bismiLah{
+        display: flex;
+        margin-left : 15px;
+    }
+    hr{
+        margin-top: 20px;
+    }
+
+    /* ------- header ------ */
+    
+    header {
+        width: 60%;
+    }
+    .getInTouch{
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    header .getInTouch , header .nameEmail , .subject , .message{
+        width: 100%
+    }
+    header .getTouch {
+        text-align: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+    }
+    header .nameEmail {
+        display: flex;
+        justify-content: space-between;
+    }
+    header .nameEmail input{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        height: 40px;
+        width: 100%;
+        background: rgb(241, 240, 240);
+
+    }
+    header .subject input{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 99.2%;
+        height: 40px;
+        background: rgb(241, 240, 240);
+    }
+    header .message input {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 99.2%;
+        height: 180px;
+        background: rgb(241, 240, 240);
+    }
+    
+    header .send {
+        width: 130px ;
+        height: 30px ;
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background: orange;
+    }
+    header .send h3 {
+        color: white;
+    }
+    
+    /* ---- main ----- */
+    main {
+        width: 35%;
+        padding: 15px;
+        background: rgb(255, 234, 0);
+    }
+    main h1 {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        text-align: center;
+        color: white; 
+    }
+
+    /* -- addrees -- */
+    
+    main .addrees span {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white; 
+    }
+
+    main .addrees img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    main .addrees {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+
+    /* --- phone --- */
+
+    main .phone span {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+    }
+    
+    main .phone img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    main .phone {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+
+    /* -- email -- */
+
+    main .email span {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+    }
+
+    main .email img {
+        width: 40px;
+        height: 40px;
+    }
+
+    main .email {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+ 
+    /* --- site --- */
+    
+    main .site span {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+    }
+
+    main .site img {
+        width: 40px;
+        height: 40px;
+    }
+
+    main .site {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+
+    /* -- flex --- */
+
+     body .flex-page {
+        display: flex;
+        justify-content: space-around;
+     }
+
+     /* --footer-- */
+
+     footer .about li {
+        display: inline-block;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    footer .about a {
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+    }
+    
+    footer .about{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+    footer #copy {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(99, 99, 144);
+    }
+    footer{
+        height: 100px;
+        background-color: rgb(0, 0, 62);
+        padding-top: 30px;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    @media (max-width: 500px) {
+        nav{
+            width: 90%;
+        }
+        #text{
+            width: 150px;
+        }
+        .bismiLah2{
+            width: 200px;
+            gap: 11px;
+            margin-left: 30px;
+        }
+        #amazon{
+            width: 37px;
+            margin-right: 6px;
+        }
+        .tableProduit{
+            flex-direction: column;
+            align-items: center;
+        }
+        .produitEllipse .cproduit img {
+            width:400px;
+            height: auto;
+            margin-right: 100px;
+        }
+        .produitEllipse .cellipse{
+            margin-right: 490px;
+        }
+        
+        .produitEllipse {
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+        }
+        
+        footer .about {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+        footer #copy {
+            text-align: center;
+            margin-left: 100px;
+        }
+       
+        /* --- flex-inverse */
+
+        body .flex-page {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+         }
+         
+         header{
+            width: 99% ;
+         }
+         main{
+            width: 94%;
+         }
+
+         main .icon{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+         }
+         main .addrees img {
+            max-width: 30px ;
+            max-height: 30px ;
+        }
+        main .addrees h3 {
+            font-size:15Px;
+        }
+
+    
+        main .phone img {
+            max-width: 30px ;
+            max-height: 30px ;
+        }
+        main .phone h3 {
+            font-size: 15px;       
+         }
+     
+         main .email img {
+            max-width: 30px;
+            max-height: 30px;
+         }
+
+         main .email h3 {
+            font-size: 15px;
+         }
+
+         main .site img {
+            max-width: 30px;
+            max-height: 30px;
+         }
+         main .site h3 {
+            font-size: 15px;
+         }
+
+    }
+   
