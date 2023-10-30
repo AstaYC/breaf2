@@ -60,7 +60,7 @@ function setStorage(product) {
         }
     }
 
-    localStorage.setItem('productInCart', JSON.stringify(cartItem))
+    localStorage.setItem('productInCart', JSON.stringify(cartItem)) ;
 }
 
 function totalCost ( product ) {
@@ -73,13 +73,18 @@ function totalCost ( product ) {
     else {
         localStorage.setItem("totalCost", product.price);
     }
+    
+    let totalValue = parseInt(total.innerHTML) ;
+    totalValue = cartCost ;
+    
+
 }
 
 
 for (let i = 0 ; i < carts.length ; i++){
     carts[i].addEventListener('click' , () => {
     cartsNumbers(products[i]) ;
-    totalCost(products[i])
+    totalCost(products[i]) ;
     })
 
 }
@@ -94,6 +99,12 @@ function antiRefresh () {
 antiRefresh();
 
 // ----- side bare --------- //
+
+
+
+
+
+
 
 let plus = document.querySelectorAll('.nombrePiece .plus');
 let spanPlus = document.querySelectorAll('.nombrePiece h3')
@@ -126,4 +137,8 @@ for (let i = 0 ; i < minus.length ; i++){
     minus[i].addEventListener('click' , () => {
         supp(spanMinus[i]);
     })
+}
+
+function total () {
+
 }
