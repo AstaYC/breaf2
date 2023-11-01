@@ -1,5 +1,7 @@
 let carts = document.querySelectorAll('.mall');
-let total = document.querySelector('.total span');
+let plus = document.querySelectorAll('.nombrePiece .plus');
+let spanPlus = document.querySelectorAll('.nombrePiece h3');
+let spanTotal = document.querySelector('.total span')
 
 let products = [
 
@@ -42,6 +44,7 @@ function cartsNumbers( product) {
     setStorage(product);
 } 
 
+
 function setStorage(product) {
     let cartItem =  localStorage.getItem('productInCart');
     cartItem = JSON.parse(cartItem);
@@ -62,6 +65,7 @@ function setStorage(product) {
 
     localStorage.setItem('productInCart', JSON.stringify(cartItem)) ;
 }
+
 
 function totalCost ( product ) {
     let cartCost = localStorage.getItem('totalCost');
@@ -89,25 +93,18 @@ for (let i = 0 ; i < carts.length ; i++){
 
 }
 
-function antiRefresh () {
-    let storageCard = localStorage.getItem('cartNumbers') ; 
-    if (storageCard){
-         document.querySelector('.bismiLah2 #number').textContent = storageCard ;
-     }
- }
+// function finalTotal () {
+//     let totalSide = localStorage.getItem('totalCost');
+//     totalSide = parseInt(totalSide);
+//     spanTotal.textContent =   '$' + totalSide ;
+// }
 
-antiRefresh();
+// finalTotal();
+
 
 // ----- side bare --------- //
 
 
-
-
-
-
-
-let plus = document.querySelectorAll('.nombrePiece .plus');
-let spanPlus = document.querySelectorAll('.nombrePiece h3')
 function add (spanPlus) {
     console.log(spanPlus);
     let quantity = parseInt(spanPlus.innerHTML) ;
@@ -120,11 +117,35 @@ function add (spanPlus) {
 for (let i = 0 ; i < plus.length ; i++){
     plus[i].addEventListener('click' , () => {
        add(spanPlus[i]);
+       intfinal () ;
     })
 }
 
+
+function intfinal () {
+    for (let i = 0 ; i < 1 ; i++){
+        spanTotal.textContent = '$' + ( (parseInt(spanPlus[i].innerHTML) * 1200) + (parseInt(spanPlus[i+1].innerHTML) * 1200) + (parseInt(spanPlus[i+2].innerHTML) * 1200))
+    }
+}
+
+// ------------- remove ------------------//
+
+let trash = document.querySelectorAll('.heart-trash');
+let divHide = document.querySelectorAll('.prodact-icon');
+
+
+for (let i = 0 ; i<trash.length ; i++){
+trash[i].addEventListener('click' , ()=> {
+    console.log('click trash');
+    divHide[i].classList.add('hide');
+} )
+}
+
+
+
+
 let minus = document.querySelectorAll('.nombrePiece .minus');
-let spanMinus = document.querySelectorAll('.nombrePiece h3')
+let spanMinus = document.querySelectorAll('.nombrePiece h3');
 function supp (spanMinus) {
     console.log(spanMinus);
     let quantity = parseInt(spanMinus.innerHTML) ;
@@ -136,9 +157,46 @@ function supp (spanMinus) {
 for (let i = 0 ; i < minus.length ; i++){
     minus[i].addEventListener('click' , () => {
         supp(spanMinus[i]);
+        intfinal() ;
     })
 }
 
-function total () {
+// function int (spanPlus[]) {
+//       spanPlus = parseInt(spanPlus.innerHTML);
+// }
 
-}
+// for (let i = 0 ; i < spanPlus.length ; i++){
+//    int (spanPlus[i]);
+// }
+
+
+
+
+
+function antiRefresh () {
+    let storageCard = localStorage.getItem('cartNumbers') ;
+    storageCard = parseInt(storageCard) ;
+    if (storageCard){
+         document.querySelector('.bismiLah2 #number').textContent = storageCard ;
+     }
+ }
+
+antiRefresh();
+
+
+// let shopping = document.querySelector('#shoppingcart')
+// let sidehide = document.querySelector('.side')
+// shopping.addEventListener('click' , () => {
+//     console.log('click click');
+//     sidehide.classList.remove('hide');
+// })
+
+let shopping = document.querySelector('#shoppingcart')
+let sidehide = document.querySelector('.side')
+
+shopping.addEventListener('click' , () => {
+    sidehide.classList.toggle ("new");
+})
+
+
+
